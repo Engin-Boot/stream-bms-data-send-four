@@ -57,6 +57,7 @@ This section lists the minimum functionality of the Sender and Receiver.
 
 ### The Sender
 
+
 - sends at least two Battery / Charging parameters
 - sends these parameters in a stream (keeps sending automatically till the user stops)
 - can either generate random values for the parameters, or read from a file
