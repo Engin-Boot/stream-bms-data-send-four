@@ -33,5 +33,5 @@ jobs:
     - name: Build and Test
       run: mvn -f pom.xml test
     - name: Run Pipeline
-      run: ./receiver/sender.exe | java -jar ./receiver/BMSReceiver.jar
+      run: python ./sender/bms_main.py | java -jar ./receiver/BMSReceiver.jar
     
