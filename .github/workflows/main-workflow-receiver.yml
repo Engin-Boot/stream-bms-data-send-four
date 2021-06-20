@@ -32,4 +32,6 @@ jobs:
         retention-days: 1
     - name: Build and Test
       run: mvn -f pom.xml test
+    - name: Run Pipeline
+      run: ./sender/sender.exe | java -jar ./receiver/BMSReceiver.jar
     
