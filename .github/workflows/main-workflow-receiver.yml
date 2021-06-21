@@ -25,7 +25,7 @@ jobs:
     - name: Build and Test
       run: mvn test
     - name: Build and Generate coverage
-      run: mvn ./receiver/test jacoco:report
+      run: mvn test jacoco:report
     - name: Upload coverage
       uses: actions/upload-artifact@v2
       with:
