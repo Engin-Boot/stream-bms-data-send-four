@@ -4,9 +4,7 @@ package BMSStreamReceiver;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
-import java.util.function.Predicate;
 
-import junit.framework.Test;
 
 public class BatteryParamEvaluator<T> {
 
