@@ -35,5 +35,5 @@ jobs:
     - name: Build and Test
       run: mvn -f pom.xml test
     - name: Run Pipeline
-      run: python ./sender/bms_main.py |  java -ea -classpath . src.main.java.BMSStreamReciever.BMSReceiver.java
+      run: python ./sender/bms_main.py |  java -jar ./src/BMSReceiver.java
     
