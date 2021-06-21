@@ -8,7 +8,8 @@ import java.util.List;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.mockito.runners.MockitoJUnitRunner;
-
+import BatteryParamEvaluator;
+import BatteryComputationParam;
 
 import org.junit.Before;
 import org.junit.Test;
