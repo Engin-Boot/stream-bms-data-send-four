@@ -32,11 +32,7 @@
 	</dependencies>
 
 	<build>
-<resources>
-     <resource>
-       <directory>reciever/main</directory>
-     </resource>
-   </resources>
+
 		<plugins>
 			<plugin>
 				<groupId>org.jacoco</groupId>
