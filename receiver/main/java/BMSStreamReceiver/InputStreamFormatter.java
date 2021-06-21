@@ -36,18 +36,29 @@ public class InputStreamFormatter extends BMSReceiver{
 	
 	private void ValidateAndStoreChargeRateVal(String chargeRateStr) {
 		if(!chargeRateStr.trim().equals("")) {
+			try {
 			  Double chargeRateVal = Double.parseDouble(chargeRateStr);
 			  Charge_rate.add(chargeRateVal);
+			}
+			catch (NumberFormatException nfe) {
+		        System.out.println("\n Invalid input type:"+nfe);
+		    }
 			  }
 		
 	}
 	
 	private void ValidateAndStoreTemperatureVal(String temperatureStr) {
 		if(!temperatureStr.trim().equals("")) {
-			  int chargeRateVal = Integer.parseInt(temperatureStr);
-			  Temperature.add(chargeRateVal);
-			  }
+			try {
+			  int temperatureVal = Integer.parseInt(temperatureStr);
+			  Temperature.add(temperatureVal);
+			 }
+			  catch (NumberFormatException nfe) {
+			        System.out.println("\n Invalid input type:"+nfe);
+			    }
+			 
 		
 	}
 	
+}
 }
